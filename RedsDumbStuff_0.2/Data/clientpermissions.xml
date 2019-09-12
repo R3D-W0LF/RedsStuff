@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClientPermissions>
+  <Client
+    name="Red"
+    ip="127.0.0.1"
+    permissions="All">
+    <command
+      name="ambientlight" />
+    <command
+      name="autorestart" />
+    <command
+      name="autorestartinterval" />
+    <command
+      name="autorestarttimer" />
+    <command
+      name="ban" />
+    <command
+      name="banid" />
+    <command
+      name="banip" />
+    <command
+      name="botcount" />
+    <command
+      name="botspawnmode" />
+    <command
+      name="calculatehashes" />
+    <command
+      name="campaigndestination" />
+    <command
+      name="campaigninfo" />
+    <command
+      name="clientlist" />
+    <command
+      name="control" />
+    <command
+      name="createfilelist" />
+    <command
+      name="debugdraw" />
+    <command
+      name="difficulty" />
+    <command
+      name="disablecrewai" />
+    <command
+      name="disableenemyai" />
+    <command
+      name="dumpids" />
+    <command
+      name="enablecheats" />
+    <command
+      name="enablecrewai" />
+    <command
+      name="enableenemyai" />
+    <command
+      name="endgame" />
+    <command
+      name="entitydata" />
+    <command
+      name="eventmanager" />
+    <command
+      name="exit" />
+    <command
+      name="explosion" />
+    <command
+      name="findentityids" />
+    <command
+      name="fire" />
+    <command
+      name="fixhulls" />
+    <command
+      name="fixitems" />
+    <command
+      name="followsub" />
+    <command
+      name="freecamera" />
+    <command
+      name="freeze" />
+    <command
+      name="gamemode" />
+    <command
+      name="giveaffliction" />
+    <command
+      name="givecommandperm" />
+    <command
+      name="giveperm" />
+    <command
+      name="giverank" />
+    <command
+      name="godmode" />
+    <command
+      name="heal" />
+    <command
+      name="help" />
+    <command
+      name="items" />
+    <command
+      name="kick" />
+    <command
+      name="kickid" />
+    <command
+      name="kill" />
+    <command
+      name="killmonsters" />
+    <command
+      name="lighting" />
+    <command
+      name="lock" />
+    <command
+      name="lockx" />
+    <command
+      name="locky" />
+    <command
+      name="los" />
+    <command
+      name="mission" />
+    <command
+      name="msg" />
+    <command
+      name="mute" />
+    <command
+      name="netstats" />
+    <command
+      name="oxygen" />
+    <command
+      name="power" />
+    <command
+      name="ragdoll" />
+    <command
+      name="randomizeseed" />
+    <command
+      name="restart" />
+    <command
+      name="revive" />
+    <command
+      name="revokecommandperm" />
+    <command
+      name="revokeperm" />
+    <command
+      name="say" />
+    <command
+      name="seed" />
+    <command
+      name="servermsg" />
+    <command
+      name="servername" />
+    <command
+      name="setclientcharacter" />
+    <command
+      name="setpassword" />
+    <command
+      name="setpassword" />
+    <command
+      name="showperm" />
+    <command
+      name="showseed" />
+    <command
+      name="shuttle" />
+    <command
+      name="spawn" />
+    <command
+      name="spawnitem" />
+    <command
+      name="startgame" />
+    <command
+      name="sub" />
+    <command
+      name="tags" />
+    <command
+      name="teleportcharacter" />
+    <command
+      name="toggleaitargets" />
+    <command
+      name="togglecharacternames" />
+    <command
+      name="togglehud" />
+    <command
+      name="toggleitemhighlights" />
+    <command
+      name="toggleupperhud" />
+    <command
+      name="traitorlist" />
+    <command
+      name="unban" />
+    <command
+      name="unbanip" />
+    <command
+      name="unmute" />
+    <command
+      name="verboselogging" />
+    <command
+      name="water" />
+  </Client>
+</ClientPermissions>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Reds Stuff 0.1" path="Data/ContentPackages/Reds Stuff 0.1" corepackage="false" hideinworkshopmenu="true" gameversion="0.9.0.0">
+  <Item file="Mods/RedsStuff/Items/Jobgear/Engineer/engineer_gear.xml" />
+  <Item file="Mods/RedsStuff/Items/Jobgear/Security/securityofficer_gear.xml" />
+  <Item file="Mods/RedsStuff/Items/Jobgear/Merc/merc_gear.xml" />
+  <Item file="Mods/RedsStuff/Items/Jobgear/Mariner/hard_gear.xml" />
+  <Item file="Mods/RedsStuff/Items/Weapons/weapons.xml" />
+  <Jobs file="Content/Jobs.xml" />
+  <Sounds file="Content/Sounds/sounds.xml" />
+  <Executable file="Barotrauma.exe" />
+  <ServerExecutable file="DedicatedServer.exe" />
+</contentpackage>

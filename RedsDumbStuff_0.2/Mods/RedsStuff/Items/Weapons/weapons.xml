@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="KZ-24 Shell" identifier="shotgunshell" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem" Scale="0.35" impactsoundtag="impact_metal_light">
+    <Price locationtype="Military" buyprice="30" />
+    <Price locationtype="City" buyprice="50" />
+    <Price locationtype="Outpost" buyprice="75" />
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="steel"/>
+    </Fabricate>
+    <Sprite texture="weapons.png" sourcerect="1,1,16,9" depth="0.55" />
+    <Body width="8" height="3" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+    <Projectile characterusable="false" launchimpulse="30.0" hitscan="true" removeonhit="true">
+      <Attack structuredamage="10" stun="0.2" targetforce="20">
+        <Affliction identifier="gunshotwound" strength="80" />
+        <Affliction identifier="internaldamage" strength="50" />
+      </Attack>
+    </Projectile>
+  </Item>
+  
+  <Item name="KZ-24" identifier="shotty" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon" Scale="0.32" impactsoundtag="impact_metal_light">
+    <Price locationtype="Military" buyprice="300" />
+    <Price locationtype="City" buyprice="400" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30"/>
+      <RequiredItem identifier="steel"/>
+      <RequiredItem identifier="plastic"/>
+    </Fabricate>
+    <Sprite texture="weapons_new.png" sourcerect="0,64,282,60" depth="0.55" />
+    <Body width="90" height="30" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-30" aimpos="45,-30" handle1="-45,-6" handle2="60,7" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon barrelpos="49,10" spread="2" unskilledspread="10" combatPriority="90">
+      <Sound file="Mods/RedsStuff/Items/Weapons/Shotgun1.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems identifiers="shotgunshell" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="4" itempos="27,10" iteminterval="0,-4" hideitems="false">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,0,121,30" />
+      <Containable identifiers="shotgunshell" />
+    </ItemContainer>
+  </Item>
+
+  <Item name="ZKZ Round" identifier="zkzbullet" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem" Scale="0.35" impactsoundtag="impact_metal_light">
+    <Price locationtype="Military" buyprice="50" />
+    <Price locationtype="City" buyprice="60" />
+    <Price locationtype="Outpost" buyprice="75" />
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="steel"/>
+    </Fabricate>
+    <Sprite texture="weapons.png" sourcerect="1,14,25,10" depth="0.55" />
+    <Body width="8" height="3" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+    <Projectile characterusable="false" launchimpulse="30.0" hitscan="true" removeonhit="true">
+      <Attack structuredamage="10" stun="0.2" targetforce="20">
+        <Affliction identifier="gunshotwound" strength="60" />
+        <Affliction identifier="internaldamage" strength="40" />
+      </Attack>
+    </Projectile>
+  </Item>
+  
+  <Item name="ZKZ" identifier="rifle" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon" Scale="0.32" impactsoundtag="impact_metal_light">
+    <Price locationtype="Military" buyprice="300" />
+    <Price locationtype="City" buyprice="200" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30"/>
+      <RequiredItem identifier="steel"/>
+      <RequiredItem identifier="plastic"/>
+    </Fabricate>
+    <Sprite texture="weapons_new.png" sourcerect="0,132,325,80" depth="0.55" />
+    <Body width="90" height="30" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,0" aimpos="20,5" handle1="-30,-5" handle2="250,6" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon barrelpos="49,10" spread="2" unskilledspread="10" combatPriority="90">
+      <Sound file="Mods/RedsStuff/Items/Weapons/Sks1.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems identifiers="zkzbullet" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="10" itempos="27,10" iteminterval="0,-4" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,0,121,30" />
+      <Containable identifiers="zkzbullet" />
+    </ItemContainer>
+  </Item>
+
+  <Item name="Nagnat" identifier="nagnat" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" Scale="0.32" impactsoundtag="impact_metal_light">
+    <Price locationtype="Military" buyprice="70" />
+    <Price locationtype="City" buyprice="120" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/RedsStuff/Items/Weapons/weapons_new.png" sourcerect="0,0,117,64" depth="0.55"/>
+    <Sprite texture="weapons_new.png" sourcerect="0,0,117,64" depth="0.55" />
+    <Body width="28" height="20" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-11,-7" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon barrelpos="14,6" spread="0" unskilledspread="1" combatPriority="30">
+      <Sound file="Mods/RedsStuff/Items/Weapons/nagnatS.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
+      </StatusEffect>
+      <RequiredItems identifier="revolverround" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="40" />
+    </RangedWeapon>
+    <ItemContainer capacity="7" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+      <Containable identifiers="revolverround" />
+    </ItemContainer>
+  </Item>
+</Items>
+  
+
